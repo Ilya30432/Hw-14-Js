@@ -1,6 +1,6 @@
 const bth = document.querySelector('.bth');
 const form = document.querySelector('.form')
-const product = document.querySelector('.form-product')
+const productForm = document.querySelector('.form-product')
 
 bth.addEventListener('click', function(){
     form.style.display = "block"
@@ -22,7 +22,7 @@ form.addEventListener('submit', function (event) {
             for (const key in formObject){
                 const newDiv = document.createElement('div')
                 newDiv.textContent = `${key}: ${formObject[key]}`;
-                product.appendChild(newDiv)
+                productForm.appendChild(newDiv)
                 }
         };
     };
