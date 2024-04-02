@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="wrapper">
+        <div class="product"> 
+            <img src="./Ball.jpg" alt="ball" width="200" height="200">
+            <button class="bth">Buy</button>
+        </div>
+        <div class="form-product">
+            <form class="form" >
+                <label>
+                    Name <br>
+                    <input type="text" name="name" required>
+                    <span> The name cannot contain a number</span>
+                </label><br>
+                <label>
+                    City <br>
+                    <select name="select">
+                        <option value="kiev">Kiev</option>
+                        <option value="odessa">Odessa</option>
+                        <option value="kherson">Kherson</option>
+                    </select>
+                </label><br>
+                <label>
+                    Number Nova Posta <br>
+                    <input type="number" name="number_posta" required>
+                </label><br>
+                <label>
+                    Quantity of goods <br>
+                    <input type="number" name="quantity" required>
+                </label><br>
+                <label >
+                    Comment <br>
+                    <textarea name="Comment" rows="5" cols="30" required></textarea>
+                </label> <br>
+                <input type="submit" value="submit">
+            </form>
+        </div>
+    </div>
+    <script src="./script.js"></script>
+</body>
+</html>
